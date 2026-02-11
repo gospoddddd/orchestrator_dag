@@ -1,0 +1,51 @@
+pipelines:
+  flow1:
+    description: "Flow 1 - Main data pipeline"
+
+    freshness_check:
+      conn_id: "local_postgres"
+      source_table: "source_data"
+      source_date_column: "data_date"
+      dest_table: "flow1_target_table"
+      dest_date_column: "updated_at"
+
+    on_not_fresh:
+      trigger_dags:
+        - "flow1_extract"
+        - "flow1_transform"
+        - "flow1_load"
+
+    on_fresh:
+      next_pipeline: "flow2"    # self-trigger with next pipeline, or null to stop
+      # trigger_dag: "some_external_dag"  # alternatively trigger any DAG instead
+
+    max_iterations: 35
+    timeout_minutes: 300
+
+  flow2:
+    description: "Flow 2 - Secondary data pipeline"
+
+    freshness_check:
+      conn_id: "local_postgres"
+      source_table: "source_data"
+      source_date_column: "data_date"
+      dest_table: "flow2_target_table"
+      dest_date_column: "updated_at"
+
+    on_not_fresh:
+      trigger_dags:
+        - "flow2_extract"
+        - "flow2_transform"
+        - "flow2_load"
+
+    on_fresh:
+      next_pipeline: null  # last pipeline — stop
+
+    max_iterations: 35
+    timeout_minutes: 300
+
+settings:
+  schedule: "0 10 * * *"           # orchestrator cron schedule, or null for manual only
+  default_pipeline: "flow1"        # pipeline to start when triggered by schedule (no conf)
+  default_max_iterations: 30
+  default_timeout_minutes: 300

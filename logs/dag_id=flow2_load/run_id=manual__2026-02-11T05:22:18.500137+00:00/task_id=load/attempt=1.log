@@ -1,0 +1,7 @@
+{"timestamp":"2026-02-11T05:22:19.453348Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-11T05:22:19.453642Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/flow2_load.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-11T05:22:19.471861Z","level":"warning","event":"empty cryptography key - values will not be stored encrypted.","logger":"airflow.models.crypto","filename":"crypto.py","lineno":82}
+{"timestamp":"2026-02-11T05:22:19.475547Z","level":"info","event":"Running statement: SELECT MAX(updated_at), COUNT(*) FROM flow2_target_table, parameters: None","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook","filename":"sql.py","lineno":829}
+{"timestamp":"2026-02-11T05:22:19.476231Z","level":"info","event":"Rows affected: 1","logger":"airflow.task.hooks.airflow.providers.postgres.hooks.postgres.PostgresHook","filename":"sql.py","lineno":841}
+{"timestamp":"2026-02-11T05:22:19.476356Z","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-02-11T05:22:19.476481Z","level":"info","event":"[flow2_load] flow2_target_table: max_date=2026-02-08, rows=68","logger":"task.stdout"}

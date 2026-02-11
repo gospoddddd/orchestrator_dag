@@ -1,0 +1,9 @@
+{"timestamp":"2026-02-11T05:09:07.707508Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-11T05:09:07.708162Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/orchestrator.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-11T05:09:07.740327Z","level":"info","event":"Branch decision: missing_dates=[], next_pipeline=None","logger":"task.stdout"}
+{"timestamp":"2026-02-11T05:09:07.740555Z","level":"info","event":"All pipelines completed. Done.","logger":"task.stdout"}
+{"timestamp":"2026-02-11T05:09:07.736058Z","level":"info","event":"Done. Returned value was: done","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-02-11T05:09:07.736114Z","level":"info","event":"Branch into done","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
+{"timestamp":"2026-02-11T05:09:07.736449Z","level":"info","event":"Following branch {'done'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":146}
+{"timestamp":"2026-02-11T05:09:07.736510Z","level":"info","event":"Skipping tasks [('trigger_next_pipeline', -1), ('trigger_self_retry', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":185}
+{"timestamp":"2026-02-11T05:09:07.740470Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":1083}

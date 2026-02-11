@@ -1,0 +1,8 @@
+{"timestamp":"2026-02-11T05:19:36.303359Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
+{"timestamp":"2026-02-11T05:19:36.303634Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/orchestrator.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
+{"timestamp":"2026-02-11T05:19:36.337493Z","level":"info","event":"NOT fresh. Retrying (iteration 2).","logger":"task.stdout"}
+{"timestamp":"2026-02-11T05:19:36.333285Z","level":"info","event":"Done. Returned value was: trigger_self_retry","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":230}
+{"timestamp":"2026-02-11T05:19:36.333334Z","level":"info","event":"Branch into trigger_self_retry","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
+{"timestamp":"2026-02-11T05:19:36.333568Z","level":"info","event":"Following branch {'trigger_self_retry'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":146}
+{"timestamp":"2026-02-11T05:19:36.333619Z","level":"info","event":"Skipping tasks [('trigger_next_pipeline', -1), ('max_iterations_reached', -1), ('done', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":185}
+{"timestamp":"2026-02-11T05:19:36.337648Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":1083}
