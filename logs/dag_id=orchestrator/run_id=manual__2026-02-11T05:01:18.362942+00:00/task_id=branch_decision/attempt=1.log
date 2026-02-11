@@ -1,9 +1,0 @@
-{"timestamp":"2026-02-11T05:07:29.854680Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
-{"timestamp":"2026-02-11T05:07:29.854962Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/orchestrator.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
-{"timestamp":"2026-02-11T05:07:29.883993Z","level":"info","event":"Branch decision: missing_dates=[], next_pipeline=flow2","logger":"task.stdout"}
-{"timestamp":"2026-02-11T05:07:29.884219Z","level":"info","event":"All dates loaded for current pipeline. Moving to next pipeline: flow2","logger":"task.stdout"}
-{"timestamp":"2026-02-11T05:07:29.880729Z","level":"info","event":"Done. Returned value was: trigger_next_pipeline","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"python.py","lineno":230}
-{"timestamp":"2026-02-11T05:07:29.880779Z","level":"info","event":"Branch into trigger_next_pipeline","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"branch.py","lineno":44}
-{"timestamp":"2026-02-11T05:07:29.881004Z","level":"info","event":"Following branch {'trigger_next_pipeline'}","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":146}
-{"timestamp":"2026-02-11T05:07:29.881062Z","level":"info","event":"Skipping tasks [('trigger_self_retry', -1), ('done', -1)]","logger":"airflow.task.operators.airflow.providers.standard.operators.python.BranchPythonOperator","filename":"skipmixin.py","lineno":185}
-{"timestamp":"2026-02-11T05:07:29.884123Z","level":"info","event":"Skipping downstream tasks.","logger":"task","filename":"task_runner.py","lineno":1083}

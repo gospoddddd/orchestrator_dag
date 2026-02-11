@@ -1,5 +1,0 @@
-{"timestamp":"2026-02-11T05:00:38.685859Z","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager","filename":"manager.py","lineno":179}
-{"timestamp":"2026-02-11T05:00:38.686333Z","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/orchestrator.py","logger":"airflow.models.dagbag.BundleDagBag","filename":"dagbag.py","lineno":593}
-{"timestamp":"2026-02-11T05:00:38.760427Z","level":"info","event":"Triggering Dag Run.","trigger_dag_id":"flow2_transform","logger":"task","filename":"task_runner.py","lineno":1210}
-{"timestamp":"2026-02-11T05:00:38.768086Z","level":"info","event":"Dag Run triggered successfully.","trigger_dag_id":"flow2_transform","logger":"task","filename":"task_runner.py","lineno":1244}
-{"timestamp":"2026-02-11T05:00:38.771407Z","level":"info","event":"Waiting for dag run to complete execution in allowed state.","dag_id":"flow2_transform","run_id":"manual__2026-02-11T05:00:38.717967+00:00","allowed_state":["success"],"logger":"task","filename":"task_runner.py","lineno":1271}
